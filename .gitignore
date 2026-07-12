@@ -1,41 +1,85 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# =========================
+# Dependencies
+# =========================
 node_modules/
 
+# =========================
 # Expo
+# =========================
 .expo/
+.expo-shared/
+
+# Native folders (Expo Managed Workflow)
+android/
+ios/
+
+# Build output
 dist/
+build/
 web-build/
-expo-env.d.ts
 
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
+# EAS
+*.apk
+*.aab
 
-# Metro
-.metro-health-check*
+# =========================
+# Environment
+# =========================
+.env
+.env.*
+!.env.example
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# macOS
+# =========================
+# OS Files
+# =========================
 .DS_Store
-*.pem
+Thumbs.db
 
-# local env files
-.env*.local
+# =========================
+# VS Code
+# =========================
+.vscode/
+!.vscode/extensions.json
 
-# typescript
+# =========================
+# JetBrains
+# =========================
+.idea/
+
+# =========================
+# Testing
+# =========================
+coverage/
+
+# =========================
+# TypeScript
+# =========================
 *.tsbuildinfo
 
-# generated native folders
-/ios
-/android
+# =========================
+# Keystores & Certificates
+# =========================
+*.keystore
+*.jks
+*.p12
+*.pem
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+.cache/
+
+# =========================
+# Claude / AI
+# =========================
+.claude/
